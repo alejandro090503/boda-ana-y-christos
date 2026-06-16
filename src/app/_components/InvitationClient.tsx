@@ -430,7 +430,7 @@ function Familias() {
   return (
     <Section
       style={{
-        backgroundImage: "url(/textura-floral.webp)",
+        backgroundImage: "url(/textura-embossed.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
@@ -438,7 +438,7 @@ function Familias() {
     >
       <div
         aria-hidden="true"
-        style={{ position: "absolute", inset: 0, backgroundColor: "rgba(250,250,248,0.88)" }}
+        style={{ position: "absolute", inset: 0, backgroundColor: "rgba(250,250,248,0.6)" }}
       />
       <div style={{ position: "relative", zIndex: 1 }}>
         <SectionTitle title="NUESTRAS FAMILIAS" />
@@ -557,8 +557,20 @@ function FotoPareja() {
    ═══════════════════════════════════════════════════════ */
 function Recepcion() {
   return (
-    <Section id="recepcion">
-      <div style={{ maxWidth: 440, margin: "0 auto" }}>
+    <Section
+      id="recepcion"
+      style={{
+        backgroundImage: "url(/textura-embossed.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+      }}
+    >
+      <div
+        aria-hidden="true"
+        style={{ position: "absolute", inset: 0, backgroundColor: "rgba(250,250,248,0.6)" }}
+      />
+      <div style={{ maxWidth: 440, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <SectionTitle eyebrow="Celebración" title="RECEPCIÓN" />
 
         <Reveal delay={0.2}>
@@ -638,7 +650,20 @@ function RSVP() {
   const waUrl = `https://wa.me/${waNumber}?text=${waMessage}`;
 
   return (
-    <Section wine id="rsvp">
+    <Section
+      id="rsvp"
+      style={{
+        backgroundColor: C.wine,
+        backgroundImage: "url(/textura-embossed.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative",
+      }}
+    >
+      <div
+        aria-hidden="true"
+        style={{ position: "absolute", inset: 0, backgroundColor: "rgba(92,26,42,0.88)" }}
+      />
       <div style={{ position: "relative", zIndex: 1 }}>
         <SectionTitle eyebrow="Esperamos contar contigo" title="CONFIRMA TU ASISTENCIA" light />
 
